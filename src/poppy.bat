@@ -1,0 +1,2 @@
+erl -sasl dir 'lib\sasl-2.3.2\ebin' -eval "application:start(sasl)"  -name foo@127.0.0.1 -setcookies 1234 -s init stop
+erl -pa lib\poppy-1.0.0\ebin -boot releases\1.0.0\start -eval "appmon:start()" -name foo@127.0.0.1 -setcookies 1234
